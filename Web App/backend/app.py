@@ -1,8 +1,10 @@
 import re
-from flask import Flask, render_template, request, flash, redirect, url_for
+from flask import Flask, request
+from flask_cors import CORS
 
 app = Flask(__name__)
 app.secret_key = "test-key"
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # ------------------------
 # Lexical Analysis
@@ -250,16 +252,15 @@ def compile_source(source_code):
 # ------------------------
 # Flask Routes
 # ------------------------
-@app.route("/", methods=["GET", "POST"])
-def index():
+@app.route("/compile", methods=["GET", "POST"])
+def compile():
     if request.method == "POST":
         source_code = request.form.get("source_code", "")
         if not source_code.strip():
-            flash("Please enter some source code.", "warning")
-            return redirect(url_for("index"))
+            return {"error": "Please enter some source code."}, 400
         result = compile_source(source_code)
-        return render_template("index.html", source_code=source_code, output=result)
-    return render_template("index.html", source_code="", output="")
+        return {"output": result}, 200
+    return {"message": "Send a POST request with source_code to compile"}, 200
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
