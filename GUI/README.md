@@ -9,6 +9,39 @@ This is the desktop GUI version of the Compiler Simulator, offering a rich, inte
 - **Target Code Generation**: Converts intermediate code to pseudo-assembly.
 - Interactive GUI
 
+## 📁 Project Structure
+```
+GUI/
+├── app.py                        # Main GUI entry point
+└── Compiler/
+    ├── lexical_analysis.py       # Lexical analyzer
+    ├── syntax_analysis.py        # Parser and AST generator
+    ├── semantic_analysis.py      # Type checking and folding
+    ├── intermediate_code_generation.py
+    ├── code_generation.py        # Assembly code generator
+    └── compile_source.py         # Compiler pipeline coordinator
+```
+
+## 🧰 Prerequisites
+1. Python 3.x
+2. Tkinter (usually bundled with Python)
+3. Install dependencies using:
+   ```
+   pip install -r requirements.txt
+   ```
+⚠️ Note: requirements.txt may not list Tkinter as it comes pre-installed with most Python distributions.
+
+## ⚙️ Setup & Run
+1. Navigate to the GUI directory:
+   ```
+   cd "Compiler_Simulator/GUI"
+   ```
+2. Run the application:
+   ```
+   python app.py
+   ```
+
+
 ## 🖋️ Usage Instructions
 1. **Enter Source Code**: Input arithmetic expressions into the main text area.
 2. **Click "Compile"**: Initiates the compilation pipeline.
@@ -46,7 +79,7 @@ a = 3 + 5 * (2 - 1)
     STORE a
     ```
 
-## 🎯 Ideal For
+## 🎯 Ideal For
 1. Students and educators learning compiler design.
 2. Demonstrating compiler phases in classrooms.
 3. Building on to support advanced language features.
