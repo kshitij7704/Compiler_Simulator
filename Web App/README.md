@@ -29,21 +29,16 @@ Web App/
   ```
 
 ## ⚙️ Setup & Run
-Navigate to the Web App directory:
+1. Navigate to the Web App directory:
+    ```
+    cd "Compiler_Simulator/Web App"
+    ```
+2. Run the Flask application:
+    ```
+    python app.py
+    ```
+3. Open your browser and go to:
+    ```
+    http://127.0.0.1:5000
+    ```
 
-bash
-Copy
-Edit
-cd "Compiler_Simulator/Web App"
-Run the Flask application:
-
-bash
-Copy
-Edit
-python app.py
-Open your browser and go to:
-
-cpp
-Copy
-Edit
-http://127.0.0.1:5000
