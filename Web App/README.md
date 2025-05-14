@@ -50,22 +50,22 @@ Web App/
 
 ## 🧠 Example 
 ### Input
-    ```
-    a = 3 + 5 * (2 - 1)
-    ```
+```
+a = 3 + 5 * (2 - 1)
+```
 ### Sample Output: 
-1. Tokens: 
-    ```
+1. Tokens:
+   ```
     ['a', '=', '3', '+', '5', '*', '(', '2', '-', '1', ')']
-    ```
-2. Intermediate Code:
+   ```
+3. Intermediate Code:
     ```
     t1 = 2 - 1
     t2 = 5 * t1
     t3 = 3 + t2
     a = t3
     ```
-3. Target Code (pseudo-assembly):
+4. Target Code (pseudo-assembly):
     ```
     LOAD 2
     SUB 1
