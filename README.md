@@ -1,7 +1,7 @@
-# Compiler Simulator
+# 🛠️ Compiler Simulator
 A simple compiler simulator that demonstrates the phases of compilation—from lexical analysis to target code generation for arithmetic expressions. This project includes both a desktop GUI (built with Tkinter) and a web application (built with Flask) to showcase the compilation process.
 
-## Features
+## 🚀 Features
 - **Lexical Analysis**: Tokenizes source code into meaningful units.
 - **Syntax Analysis**: Parses tokens to construct an Abstract Syntax Tree (AST).
 - **Semantic Analysi**s: Performs type checking and constant folding.
@@ -10,7 +10,7 @@ A simple compiler simulator that demonstrates the phases of compilation—from l
 - **Desktop GUI**: A polished, modern interface using Tkinter and ttk, complete with a clear button, status bar, and file operations.
 - **Web Application**: A responsive web interface built with Flask and Bootstrap for online code compilation and output display.
 
-## Project Structure
+## 📁 Project Structure
 ```
 Compiler_Simulator/
 ├── GUI/
@@ -28,7 +28,7 @@ Compiler_Simulator/
     └── templates/
         └── index.html            
 ```
-## Prerequisites
+## 🧰 Prerequisites
 1. Python 3.x
 2. The following Python packages:
     - Flask
@@ -38,7 +38,7 @@ Compiler_Simulator/
 pip install -r requirements.txt
 ```
 
-## Installation
+## 🔧 Installation
 1. Clone the Repository:
 ```
 git clone https://github.com/kshitij7704/Compiler_Simulator.git
@@ -53,8 +53,8 @@ venv\Scripts\activate # For Windows
 pip install -r requirements.txt
 ```
 
-## Usage
-### Desktop GUI Version
+## 🖥️ Usage
+### 💻 Desktop GUI Version
 1. The GUI version uses Tkinter to provide a standalone desktop application.
 2. Run the GUI Application:
 ```
@@ -67,7 +67,7 @@ python app.py
 3. The output is displayed step by step (lexical analysis, AST, intermediate code, etc.) in a styled output area.
 4. Use the Clear button to reset the input and output fields.
 
-### Web Application Version
+### 🌐 Web Application Version
 1. The web app version uses Flask and Bootstrap for a responsive online interface.
 2. Run the Flask Application:
 ```
@@ -77,15 +77,18 @@ python app.py
 3. Access the Web App:
     - Open your browser and navigate to http://127.0.0.1:5000.
       
-#### Features:
+####  🔄 Workflow:
 1. Input source code via a responsive textarea.
 2. Click Compile to process the code.
 3. The compilation output is displayed with detailed phase-by-phase results in an attractive output card.
 4. Use the Clear button to reset the code input and output display.
 5. Additional file operations (open/save) and a menu bar are available.
 
-## Compiler Features:
-The current implementation supports simple arithmetic expressions.
+## 🧠 Supported Language Features
+The simulator currently supports:
+- Arithmetic expressions
+- Basic identifiers and constants
+- Operators: +, -, *, /, and parentheses for grouping
 
-## Contributing
+## 🤝 Contributing
 Contributions, bug fixes, and feature suggestions are welcome. Feel free to open an issue or submit a pull request.
