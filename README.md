@@ -1,6 +1,8 @@
 # 🛠️ Compiler Simulator
 A simple compiler simulator that demonstrates the phases of compilation—from lexical analysis to target code generation for arithmetic expressions. This project includes both a desktop GUI (built with Tkinter) and a web application (built with Flask) to showcase the compilation process.
 
+---
+
 ## 🚀 Features
 - **Lexical Analysis**: Tokenizes source code into meaningful units.
 - **Syntax Analysis**: Parses tokens to construct an Abstract Syntax Tree (AST).
@@ -9,6 +11,8 @@ A simple compiler simulator that demonstrates the phases of compilation—from l
 - **Target Code Generation**: Generates pseudo-assembly code from the intermediate representation.
 - **Desktop GUI**: A polished, modern interface using Tkinter and ttk, complete with a clear button, status bar, and file operations.
 - **Web Application**: A responsive web interface built with Flask and Bootstrap for online code compilation and output display.
+
+---
 
 ## 📁 Project Structure
 ```
@@ -28,6 +32,8 @@ Compiler_Simulator/
     └── templates/
         └── index.html            
 ```
+---
+
 ## 🧰 Prerequisites
 1. Python 3.x
 2. The following Python packages:
@@ -37,6 +43,8 @@ Compiler_Simulator/
 ```
 pip install -r requirements.txt
 ```
+
+---
 
 ## 🔧 Installation
 1. Clone the Repository:
@@ -52,6 +60,8 @@ source venv/bin/activate # For Mac
 venv\Scripts\activate # For Windows
 pip install -r requirements.txt
 ```
+
+---
 
 ## 🖥️ Usage
 ### 💻 Desktop GUI Version
@@ -84,11 +94,15 @@ python app.py
 4. Use the Clear button to reset the code input and output display.
 5. Additional file operations (open/save) and a menu bar are available.
 
+---
+
 ## 🧠 Supported Language Features
 The simulator currently supports:
 - Arithmetic expressions
 - Basic identifiers and constants
 - Operators: +, -, *, /, and parentheses for grouping
+
+---
 
 ## 🤝 Contributing
 Contributions, bug fixes, and feature suggestions are welcome. Feel free to open an issue or submit a pull request.
